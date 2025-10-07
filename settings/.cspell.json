@@ -1,0 +1,9 @@
+{
+  "version": "0.2",
+  "language": "en,ja",
+  "words": [
+    "selfcoding",
+    "Markuplint"
+  ],
+  "ignoreWords": []
+}

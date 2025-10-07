@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# エラーや小さな知識をerror-topicディレクトリに追加するラッパースクリプト
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+"$SCRIPT_DIR/settings/add-topic.sh" "$@"

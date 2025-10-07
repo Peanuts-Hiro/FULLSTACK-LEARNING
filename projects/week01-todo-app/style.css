@@ -1,0 +1,166 @@
+/* === 基本設定 === */
+
+/* body: ページ全体の設定 */
+body {
+    /* フォント: sans-serifは読みやすいゴシック体 */
+    font-family: sans-serif;
+    /* 背景色: 薄いグレーで目に優しく */
+    background-color: #f5f5f5;
+    /* 余白: ブラウザのデフォルト余白をリセット */
+    margin: 0;
+    padding: 20px;
+}
+
+/* === コンテナ === */
+
+/* .container: コンテンツを囲む箱 */
+.container {
+    /* 最大幅: 600pxに制限（大画面でも広がりすぎない） */
+    max-width: 600px;
+    /* 中央寄せ: 左右のmarginをautoにすることで中央配置 */
+    margin: 0 auto;
+    /* 背景色: 白 */
+    background-color: white;
+    /* 内側の余白: 要素が端にくっつかないように */
+    padding: 30px;
+    /* 角丸: 少し丸くして柔らかい印象に */
+    border-radius: 10px;
+    /* 影: 浮いているような立体感を出す */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === タイトル === */
+
+/* h1: メインタイトル */
+h1 {
+    /* 文字色: 濃いグレー */
+    color: #333;
+    /* 中央揃え */
+    text-align: center;
+    /* 下の余白 */
+    margin-bottom: 30px;
+}
+
+/* === 入力エリア === */
+
+/* .input-area: 入力欄と追加ボタンを横並びにする */
+.input-area {
+    /* Flexboxで横並びレイアウト */
+    display: flex;
+    /* 要素間の隙間 */
+    gap: 10px;
+    /* 下の余白 */
+    margin-bottom: 20px;
+}
+
+/* #taskInput: テキスト入力欄 */
+#taskInput {
+    /* flex-grow: 1で残りのスペースを全て使う */
+    flex: 1;
+    /* 内側の余白 */
+    padding: 12px;
+    /* 枠線: 薄いグレー */
+    border: 1px solid #ddd;
+    /* 角丸 */
+    border-radius: 5px;
+    /* フォントサイズ */
+    font-size: 16px;
+}
+
+/* フォーカス時（入力欄をクリックしたとき）の見た目 */
+#taskInput:focus {
+    /* デフォルトの枠線を消す */
+    outline: none;
+    /* 青い枠線で入力中であることを示す */
+    border-color: #4CAF50;
+}
+
+/* === ボタン === */
+
+/* #addButton: 追加ボタン */
+#addButton {
+    /* 内側の余白 */
+    padding: 12px 24px;
+    /* 背景色: 緑 */
+    background-color: #4CAF50;
+    /* 文字色: 白 */
+    color: white;
+    /* 枠線なし */
+    border: none;
+    /* 角丸 */
+    border-radius: 5px;
+    /* フォントサイズ */
+    font-size: 16px;
+    /* カーソル: ポインター（クリックできることを示す） */
+    cursor: pointer;
+    /* アニメーション: 色が変わるときに滑らかに */
+    transition: background-color 0.3s;
+}
+
+/* ホバー時（マウスを重ねたとき）の見た目 */
+#addButton:hover {
+    /* 少し濃い緑に変更 */
+    background-color: #45a049;
+}
+
+/* === タスクリスト === */
+
+/* #taskList: タスクを表示するリスト */
+#taskList {
+    /* リストのデフォルトスタイルをリセット */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* li: 各タスク項目 */
+#taskList li {
+    /* Flexboxで横並び（タスク名と削除ボタンを左右に配置） */
+    display: flex;
+    /* 両端揃え: タスク名は左、削除ボタンは右 */
+    justify-content: space-between;
+    /* 縦方向の中央揃え */
+    align-items: center;
+    /* 内側の余白 */
+    padding: 15px;
+    /* 下の余白（タスク間の隙間） */
+    margin-bottom: 10px;
+    /* 背景色: 薄いグレー */
+    background-color: #f9f9f9;
+    /* 角丸 */
+    border-radius: 5px;
+    /* 枠線 */
+    border: 1px solid #eee;
+}
+
+/* ホバー時（マウスを重ねたとき）の見た目 */
+#taskList li:hover {
+    /* 少し濃いグレーに変更 */
+    background-color: #f0f0f0;
+}
+
+/* .deleteBtn: 削除ボタン */
+.deleteBtn {
+    /* 内側の余白 */
+    padding: 6px 12px;
+    /* 背景色: 赤 */
+    background-color: #f44336;
+    /* 文字色: 白 */
+    color: white;
+    /* 枠線なし */
+    border: none;
+    /* 角丸 */
+    border-radius: 4px;
+    /* フォントサイズ */
+    font-size: 14px;
+    /* カーソル: ポインター */
+    cursor: pointer;
+    /* アニメーション */
+    transition: background-color 0.3s;
+}
+
+/* ホバー時の見た目 */
+.deleteBtn:hover {
+    /* 少し濃い赤に変更 */
+    background-color: #da190b;
+}

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# 体系的な知識をknowledgeディレクトリに追加するラッパースクリプト
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+"$SCRIPT_DIR/settings/add-knowledge.sh" "$@"
