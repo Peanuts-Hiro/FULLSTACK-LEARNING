@@ -1,0 +1,241 @@
+年度,月,週,学習内容,実践課題,開発工程,Claude活用法,進捗チェック,メモ・参考URL
+1,10,1,HTML/CSS基礎,個人ポートフォリオ作成,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでコード例の解説,,https://developer.mozilla.org/ja/docs/Learn/HTML
+1,10,2,レスポンシブデザイン,ポートフォリオのレスポンシブ化,要件定義 → UI設計 → 実装 → デバイステスト → 振り返り,Claude Pro: Claudeで改善点提案,,https://developer.mozilla.org/ja/docs/Learn/CSS/CSS_layout/Responsive_Design
+1,10,3,JavaScript基礎: 変数/型/演算子,簡単な電卓アプリ,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでコード解説,,https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide
+1,10,4,JavaScript: 関数/スコープ/クロージャ,関数を使った小アプリ,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで分かりやすく説明,,https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Functions
+1,11,1,配列/オブジェクト操作,TODOリスト（配列操作）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで最良実装提案,,https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array
+1,11,2,非同期処理: Promise,API呼び出し練習,要件定義 → API設計 → 実装 → テスト → 振り返り,Claude Pro: Claudeで非同期フロー解説,,https://developer.mozilla.org/ja/docs/Learn/JavaScript/Asynchronous/Promises
+1,11,3,非同期処理: async/await,非同期APIの実装,要件定義 → API設計 → 実装 → エラーハンドリング → 振り返り,Claude Pro: Claudeでエラーハンドリング提案,,https://developer.mozilla.org/ja/docs/Learn/JavaScript/Asynchronous/Async_await
+1,11,4,DOM操作とイベント処理,動的UIの実装,要件定義 → UI設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで最適化案提示,,https://developer.mozilla.org/ja/docs/Web/API/Document_Object_Model
+1,12,1,ブラウザのレンダリング基礎,ページパフォーマンス確認,要件定義 → パフォーマンス測定 → 改善実装 → 検証 → 振り返り,Claude Pro: Claudeで改善案,,https://developers.google.com/web/fundamentals/performance
+1,12,2,バージョン管理: Git基礎,リポジトリ作成と履歴管理,要件定義 → Gitフロー設計 → 実装 → プルリク体験 → 振り返り,Claude Pro: Claudeでgitワークフロー解説,,https://docs.github.com/ja/get-started/using-git
+1,12,3,コマンドライン基礎,スクリプト作成,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでコマンド解説,,https://linuxcommand.org/
+1,12,4,エディタ/IDE活用: VSCode,開発環境整備,要件定義 → 設定設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設定最適化提案,,https://code.visualstudio.com/docs
+2,1,1,Python基礎: 文法/演算子,簡単なスクリプト,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでコード改善提案,,https://docs.python.org/ja/3/tutorial/
+2,1,2,Python: 関数/モジュール,モジュール分割の練習,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでモジュール設計アドバイス,,https://docs.python.org/ja/3/tutorial/modules.html
+2,1,3,Python: クラスとOOP入門,クラスを使った小アプリ,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計レビュー,,https://docs.python.org/ja/3/tutorial/classes.html
+2,1,4,データ構造入門,スタック/キューの実装,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでアルゴリズム解説,,https://algorithms.joho.info/
+2,2,1,アルゴリズム基礎,ソート/探索の実装,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでステップ解説,,https://visualgo.net/ja
+2,2,2,HTTP基礎,HTTPリクエストを手で送る演習,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでプロトコル解説,,https://developer.mozilla.org/ja/docs/Web/HTTP
+2,2,3,REST APIの基礎,シンプルなREST設計演習,要件定義 → API設計 → 実装 → テスト → 振り返り,Claude Pro: Claudeで設計チェック,,https://restfulapi.net/
+2,2,4,SQLite/SQL基礎,簡単なDBスキーマ作成,要件定義 → DB設計 → CRUD実装 → 動作確認 → 振り返り,Claude Pro: Claudeでクエリ最適化案,,https://www.sqlite.org/docs.html
+2,3,1,DB設計基礎,正規化の演習,要件定義 → DB設計 → CRUD実装 → 動作確認 → 振り返り,Claude Pro: ClaudeでER図チェック,,https://www.databasejournal.com/
+2,3,2,環境構築: Docker基礎,簡単なコンテナ化,要件定義 → Docker化 → デプロイ設定 → デプロイ → 振り返り,Claude Pro: ClaudeでDockerfileレビュー,,https://docs.docker.com/get-started/
+2,3,3,パッケージ管理: npm/yarn,プロジェクトの依存管理,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで最適化提案,,https://docs.npmjs.com/
+2,3,4,セキュリティ入門: 基本用語,脆弱性チェックリスト作成,要件定義 → 脅威分析 → 実装 → セキュリティテスト → 振り返り,Claude Pro: Claudeでリスク解説,,https://owasp.org/www-project-top-ten/
+2,4,1,フロント小プロジェクト統合1,ポートフォリオ機能追加,要件定義 → UI設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで実装サポート,,https://react.dev/learn
+2,4,2,フロント小プロジェクト統合2,フォーム/バリデーション実装,要件定義 → UI設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで改善案,,https://react-hook-form.com/
+2,4,3,APIデバッグ: Postman活用,APIテストケース作成,要件定義 → テストケース設計 → 実装 → 実行 → 振り返り,Claude Pro: Claudeでテスト生成,,https://www.postman.com/
+2,4,4,コード品質: ESLint/Prettier導入,プロジェクトに導入,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設定提案,,https://eslint.org/
+2,5,1,ユニットテスト基礎(JS/Python),基本テストの作成,要件定義 → テストケース設計 → 実装 → 実行 → 振り返り,Claude Pro: Claudeでテストケース生成,,https://jestjs.io/ja/
+2,5,2,パフォーマンス計測: Lighthouse,速度改善施策実行,要件定義 → パフォーマンス測定 → 改善実装 → 検証 → 振り返り,Claude Pro: Claudeで改善案,,https://developers.google.com/web/tools/lighthouse
+2,5,3,アクセシビリティ基礎,ARIAラベル追加,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでチェックリスト生成,,https://www.w3.org/WAI/
+2,5,4,小規模総合演習1,簡易ブログを構築（フロント中心）,要件定義 → UI設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで実装レビュー,,https://react.dev/learn
+2,6,1,小規模総合演習2,APIを繋いでフルスタック化,要件定義 → API設計 → 実装 → API連携 → 振り返り,Claude Pro: Claudeで統合テスト生成,,https://fastapi.tiangolo.com/ja/
+2,6,2,振り返り/ポートフォリオ整備,学習成果のまとめ,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: ClaudeでREADME整形,,https://qiita.com/
+2,6,3,キャリア計画,目標設定と学習計画調整,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで計画作成支援,,https://careerly.jp/
+2,6,4,React基礎: コンポーネント/Props,カウンター実装,要件定義 → UI設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでコード説明,,https://react.dev/learn
+2,7,1,React: State/イベント,TODOアプリUI作成,要件定義 → UI設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで改善提案,,https://react.dev/learn
+2,7,2,React Hooks: useState/useEffect,タスク管理UI改善,要件定義 → UI設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで最適化提案,,https://react.dev/learn/hooks
+2,7,3,React Hooks: useMemo/useCallback,パフォーマンス改善,要件定義 → パフォーマンス測定 → 改善実装 → 検証 → 振り返り,Claude Pro: Claudeで助言,,https://react.dev/learn
+2,7,4,React Router導入,マルチページ化,要件定義 → UI設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでルーティング設計,,https://reactrouter.com/
+2,8,1,Next.js入門: ページ/ルーティング,Next.jsでブログ構築,要件定義 → ページ設計 → 実装 → 状態管理導入 → 振り返り,Claude Pro: ClaudeでSSR/ISR案,,https://nextjs.org/learn
+2,8,2,Next.js: データフェッチ(SSR/SSG),ブログ記事表示,要件定義 → ページ設計 → 実装 → 状態管理導入 → 振り返り,Claude Pro: Claudeで方式比較,,https://nextjs.org/docs/basic-features/pages
+2,8,3,TypeScript基礎,型定義の基本,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで型設計補助,,https://www.typescriptlang.org/docs/
+2,8,4,TypeScriptとReactの統合,既存コンポーネントをTS化,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで型変換支援,,https://react.dev/learn
+2,9,1,フロントテスト: Jest/RTL,コンポーネントテスト作成,要件定義 → テストケース設計 → 実装 → 実行 → 振り返り,Claude Pro: Claudeでテスト生成,,https://testing-library.com/
+2,9,2,FastAPI基礎: ルーティング,Hello API構築,要件定義 → API設計 → 実装 → テスト → 振り返り,Claude Pro: Claudeでコードレビュー,,https://fastapi.tiangolo.com/ja/
+2,9,3,FastAPI: CRUD実装,TODO API構築,要件定義 → API設計 → 実装 → テスト → 振り返り,Claude Pro: Claudeで最適化案,,https://fastapi.tiangolo.com/ja/
+2,9,4,SQLAlchemy入門,モデル定義とマイグレーション,要件定義 → DB設計 → CRUD実装 → 動作確認 → 振り返り,Claude Pro: ClaudeでDBモデルレビュー,,https://docs.sqlalchemy.org/
+2,10,1,Auth入門: JWT実装,ログインAPI実装,要件定義 → 認証フロー設計 → 実装 → デバッグ → 振り返り,Claude Pro: Claudeでセキュリティ指摘,,https://jwt.io/
+2,10,2,OAuth2導入,Google OAuthでログイン,要件定義 → 認証フロー設計 → 実装 → デバッグ → 振り返り,Claude Pro: Claudeでフロー解説,,https://developers.google.com/identity/protocols/oauth2
+2,10,3,Dockerで開発環境構築,フロント/バックのDocker化,要件定義 → Docker化 → デプロイ設定 → デプロイ → 振り返り,Claude Pro: ClaudeでDockerfile最適化,,https://docs.docker.com/
+2,10,4,CI/CD: GitHub Actions入門,自動テストとデプロイ,要件定義 → Docker化 → デプロイ設定 → デプロイ → 振り返り,Claude Pro: Claudeでワークフロー生成,,https://docs.github.com/ja/actions
+2,11,1,E2Eテスト: Playwright入門,主要フローのE2Eテスト,要件定義 → テストケース設計 → 実装 → 実行 → 振り返り,Claude Pro: Claudeでテストシナリオ生成,,https://playwright.dev/
+2,11,2,API設計: OpenAPI/Swagger,API仕様書作成,要件定義 → API設計 → 実装 → テスト → 振り返り,Claude Pro: Claudeで仕様記述補助,,https://swagger.io/docs/
+2,11,3,CORS/セキュリティ設定,実運用向けセキュリティ設定,要件定義 → 脅威分析 → 実装 → セキュリティテスト → 振り返り,Claude Pro: Claudeで設定チェック,,https://developer.mozilla.org/ja/docs/Web/HTTP/CORS
+2,11,4,フロント最適化: 画像/コード分割,Next.jsで最適化実施,要件定義 → パフォーマンス測定 → 改善実装 → 検証 → 振り返り,Claude Pro: Claudeで改善案,,https://nextjs.org/docs/advanced-features/image-optimization
+2,12,1,バックパフォーマンス: DBインデックス,クエリ最適化演習,要件定義 → パフォーマンス測定 → 改善実装 → 検証 → 振り返り,Claude Pro: Claudeでクエリ改善案,,https://use-the-index-luke.com/
+2,12,2,キャッシュ入門: Redis,セッション/キャッシュ導入,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計提案,,https://redis.io/documentation/
+2,12,3,ロギング/モニタリング基礎,Sentry導入,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで監視設計,,https://sentry.io/welcome/
+2,12,4,デプロイ: Vercel/Cloud Run,フロント/バックをデプロイ,要件定義 → Docker化 → デプロイ設定 → デプロイ → 振り返り,Claude Pro: Claudeでデプロイ手順生成,,https://vercel.com/docs
+3,1,1,GraphQL入門（任意）,GraphQLサーバ/クライアント構築,要件定義 → スキーマ設計 → 実装 → クエリ作成 → 振り返り,Claude Pro: Claudeでスキーマ設計,,https://graphql.org/
+3,1,2,WebSocket入門,リアルタイム機能実装,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで実装例提示,,https://developer.mozilla.org/ja/docs/Web/API/WebSockets_API
+3,1,3,Stripe導入: 決済連携,簡易決済フロー実装,要件定義 → API設計 → 実装 → テスト → 振り返り,Claude Pro: Claudeでセキュリティ助言,,https://stripe.com/docs
+3,1,4,アクセシビリティ改善,ARIA適用と検証,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでチェックリスト生成,,https://www.w3.org/WAI/
+3,2,1,パフォーマンス計測: Lighthouse,パフォーマンス改善実施,要件定義 → パフォーマンス測定 → 改善実装 → 検証 → 振り返り,Claude Pro: Claudeで改善案提示,,https://developers.google.com/web/tools/lighthouse
+3,2,2,プロジェクト統合演習1,小規模ECのフロント構築,要件定義 → UI設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計レビュー,,https://nextjs.org/learn
+3,2,3,プロジェクト統合演習2,ECバックエンド実装,要件定義 → API設計 → 実装 → テスト → 振り返り,Claude Pro: Claudeでテスト生成,,https://fastapi.tiangolo.com/ja/
+3,2,4,プロジェクト統合演習3,決済・注文処理実装,要件定義 → API設計 → 実装 → テスト → 振り返り,Claude Pro: Claudeで改善提案,,https://stripe.com/docs
+3,3,1,まとめと振り返り（年2）,成果公開と面談準備,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでポートフォリオ整形,,https://qiita.com/
+3,3,2,TypeScript応用: ジェネリクス,ライブラリの型定義,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで型設計補助,,https://www.typescriptlang.org/docs/
+3,3,3,型安全なAPIクライアント生成,OpenAPIから型定義生成,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで自動化支援,,https://openapi-generator.tech/
+3,3,4,高度なReactパターン,Compound Components導入,要件定義 → UI設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで改善案,,https://react.dev/learn
+3,4,1,クリーンアーキテクチャ基礎,レイヤー分割設計,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでアーキ提案,,https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html
+3,4,2,テスト設計: TDD入門,小さな機能をTDDで実装,要件定義 → テストケース設計 → 実装 → 実行 → 振り返り,Claude Pro: Claudeでテスト設計支援,,https://martinfowler.com/
+3,4,3,エンドツーエンド品質向上,監視とテスト戦略立案,要件定義 → テストケース設計 → 実装 → 実行 → 振り返り,Claude Pro: Claudeで戦略作成,,https://testing.googleblog.com/
+3,4,4,CI/CD高度化,ブルーグリーン/ローリングデプロイ導入,要件定義 → Docker化 → デプロイ設定 → デプロイ → 振り返り,Claude Pro: Claudeで手順生成,,https://martinfowler.com/bliki/BlueGreenDeployment.html
+3,5,1,セキュリティ実践: OWASP対応,脆弱性診断と修正,要件定義 → 脅威分析 → 実装 → セキュリティテスト → 振り返り,Claude Pro: Claudeで脆弱性指摘,,https://owasp.org/www-project-top-ten/
+3,5,2,依存性管理とアップグレード戦略,依存更新の自動化,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: ClaudeでPRテンプレ作成,,https://dependabot.com/
+3,5,3,パフォーマンスプロファイリング,CPU/メモリ分析,要件定義 → パフォーマンス測定 → 改善実装 → 検証 → 振り返り,Claude Pro: Claudeでボトルネック特定支援,,https://developer.chrome.com/docs/performance/
+3,5,4,非同期設計: メッセージキュー,RabbitMQ/Kafka導入演習,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計提案,,https://kafka.apache.org/
+3,6,1,データモデリング上級,複雑クエリの最適化,要件定義 → DB設計 → CRUD実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計相談,,https://use-the-index-luke.com/
+3,6,2,アーキレビュー参加,既存システムの改善提案,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでレビュー支援,,https://martinfowler.com/
+3,6,3,OSS貢献: 小さなPR作成,OSSに初PR,要件定義 → 設計 → 実装 → プルリク体験 → 振り返り,Claude Pro: ClaudeでPR文作成支援,,https://opensource.guide/
+3,6,4,メンター経験開始,社内外でメンタリング実践,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで教材作成,,https://leaddev.com/
+3,7,1,可観測性: OpenTelemetry,トレーシング導入,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで導入手順生成,,https://opentelemetry.io/docs/
+3,7,2,運用設計: アラート設計,SLO/SLI定義,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでドキュメント生成,,https://landing.google.com/sre/sre-book/chapters/service-level-objectives/
+3,7,3,マイクロサービス設計基礎,サービス分割の演習,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計案比較,,https://microservices.io/
+3,7,4,契約テスト導入,Provider/Consumerテスト,要件定義 → テストケース設計 → 実装 → 実行 → 振り返り,Claude Pro: Claudeでテストコード生成,,https://docs.pact.io/
+3,8,1,レガシーリファクタリング,モジュール分割・疎結合化,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでリファクタ提案,,https://martinfowler.com/books/refactoring.html
+3,8,2,APIゲートウェイ導入,API管理の実装,要件定義 → API設計 → 実装 → テスト → 振り返り,Claude Pro: Claudeでポリシー提案,,https://aws.amazon.com/api-gateway/
+3,8,3,セッション管理とスケーリング,スケール時のセッション設計,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計案,,https://redis.io/
+3,8,4,認証高度化: SSO,SAML/OIDCの理解と実装,要件定義 → 認証フロー設計 → 実装 → デバッグ → 振り返り,Claude Pro: Claudeでフロー整理,,https://openid.net/
+3,9,1,分散トランザクション入門,補償トランザクション設計,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計補助,,https://microservices.io/patterns/data/transactional-outbox.html
+3,9,2,クラウド基礎: AWS/GCP,クラウドアカウントセットアップ,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで比較解説,,https://aws.amazon.com/jp/getting-started/
+3,9,3,コンテナオーケストレーション: Kubernetes入門,K8sでコンテナ運用,要件定義 → Docker化 → デプロイ設定 → デプロイ → 振り返り,Claude Pro: Claudeでマニフェスト生成,,https://kubernetes.io/
+3,9,4,サービスメッシュ基礎,Istio/Linkerd導入演習,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで構成提案,,https://istio.io/
+3,10,1,スケーリングパターン,水平スケール設計演習,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでトレードオフ分析,,https://12factor.net/
+3,10,2,データレイク/ETL基礎,データパイプライン構築,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計支援,,https://cloud.google.com/solutions/data-lake
+3,10,3,インフラコード: Terraform入門,IaCでインフラ構築,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでテンプレ生成,,https://www.terraform.io/
+3,10,4,高可用性設計,故障耐性の設計演習,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: ClaudeでHA設計チェック,,https://martinfowler.com/
+3,11,1,コスト最適化,クラウドコスト試算と最適化,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでレポート作成,,https://aws.amazon.com/jp/pricing/
+3,11,2,運用自動化,Runbook自動化スクリプト作成,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで自動化提案,,https://devops.com/
+3,11,3,コンプライアンス基礎,セキュリティ・監査の前提,要件定義 → 脅威分析 → 実装 → セキュリティテスト → 振り返り,Claude Pro: Claudeでチェックリスト生成,,https://csrc.nist.gov/
+3,11,4,障害対応演習（ゲームデー）,模擬障害の対応訓練,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで対応手順生成,,https://landing.google.com/sre/book.html
+3,12,1,データベーススケーリング,リードレプリカ/シャーディング演習,要件定義 → DB設計 → CRUD実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計案,,https://use-the-index-luke.com/
+3,12,2,イベント駆動アーキテクチャ,Kafkaでイベント処理構築,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計指示,,https://kafka.apache.org/
+3,12,3,セキュリティ運用,脆弱性対応ワークフロー構築,要件定義 → 脅威分析 → 実装 → セキュリティテスト → 振り返り,Claude Pro: Claudeで運用書作成,,https://owasp.org/
+3,12,4,監視とアラート実践,Prometheus/Grafanaで監視,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでダッシュボード設計,,https://prometheus.io/
+4,1,1,マイクロフロントエンド,複数チームのフロント統合,要件定義 → UI設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで分割戦略提案,,https://martinfowler.com/
+4,1,2,技術選定プロセス運用,評価基準と比較表作成,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで比較表生成,,https://architecturenotes.co/
+4,1,3,チームリーダーシップ,スクラム/アジャイル実践,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでミーティング議事録自動化,,https://www.scrum.org/
+4,1,4,採用と評価,技術面接の作成と評価,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで面接問題生成,,https://hire.withgoogle.com/
+4,2,1,技術戦略立案,3年〜5年の技術ロードマップ作成,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで戦略文書化支援,,https://leaddev.com/
+4,2,2,組織横断のアーキ設計,複数プロダクトの統合設計,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでシステム図生成,,https://aws.amazon.com/architecture/
+4,2,3,大規模リファクタリング計画,段階的リファクタ設計と実施,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでリファクタ案生成,,https://martinfowler.com/
+4,2,4,メンタリング体制構築,メンター制度の設計と実行,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで教材作成,,https://leaddev.com/mentoring
+4,3,1,技術広報/講演,カンファレンス向けスライド作成,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでスライド生成,,https://conf.dev/
+4,3,2,経営層への技術説明,非技術者向け資料作成,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでプレゼン補助,,https://www.cio.com/
+4,3,3,プロダクトと技術の調整,ビジネス要件を技術に落とす,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで要件整理,,https://martinfowler.com/
+4,3,4,5年の振り返りと今後の計画,経験と成果の棚卸し,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでキャリアレビュー,,https://careerly.jp/
+4,4,1,TypeScript応用: ジェネリクス（追加演習1）,ライブラリの型定義（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで型設計補助,,https://www.typescriptlang.org/docs/
+4,4,2,型安全なAPIクライアント生成（追加演習1）,OpenAPIから型定義生成（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで自動化支援,,https://openapi-generator.tech/
+4,4,3,高度なReactパターン（追加演習1）,Compound Components導入（追加演習）,要件定義 → UI設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで改善案,,https://react.dev/learn
+4,4,4,クリーンアーキテクチャ基礎（追加演習1）,レイヤー分割設計（追加演習）,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでアーキ提案,,https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html
+4,5,1,テスト設計: TDD入門（追加演習1）,小さな機能をTDDで実装（追加演習）,要件定義 → テストケース設計 → 実装 → 実行 → 振り返り,Claude Pro: Claudeでテスト設計支援,,https://martinfowler.com/
+4,5,2,エンドツーエンド品質向上（追加演習1）,監視とテスト戦略立案（追加演習）,要件定義 → テストケース設計 → 実装 → 実行 → 振り返り,Claude Pro: Claudeで戦略作成,,https://testing.googleblog.com/
+4,5,3,CI/CD高度化（追加演習1）,ブルーグリーン/ローリングデプロイ導入（追加演習）,要件定義 → Docker化 → デプロイ設定 → デプロイ → 振り返り,Claude Pro: Claudeで手順生成,,https://martinfowler.com/bliki/BlueGreenDeployment.html
+4,5,4,セキュリティ実践: OWASP対応（追加演習1）,脆弱性診断と修正（追加演習）,要件定義 → 脅威分析 → 実装 → セキュリティテスト → 振り返り,Claude Pro: Claudeで脆弱性指摘,,https://owasp.org/www-project-top-ten/
+4,6,1,依存性管理とアップグレード戦略（追加演習1）,依存更新の自動化（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: ClaudeでPRテンプレ作成,,https://dependabot.com/
+4,6,2,パフォーマンスプロファイリング（追加演習1）,CPU/メモリ分析（追加演習）,要件定義 → パフォーマンス測定 → 改善実装 → 検証 → 振り返り,Claude Pro: Claudeでボトルネック特定支援,,https://developer.chrome.com/docs/performance/
+4,6,3,非同期設計: メッセージキュー（追加演習1）,RabbitMQ/Kafka導入演習（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計提案,,https://kafka.apache.org/
+4,6,4,データモデリング上級（追加演習1）,複雑クエリの最適化（追加演習）,要件定義 → DB設計 → CRUD実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計相談,,https://use-the-index-luke.com/
+4,7,1,アーキレビュー参加（追加演習1）,既存システムの改善提案（追加演習）,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでレビュー支援,,https://martinfowler.com/
+4,7,2,OSS貢献: 小さなPR作成（追加演習1）,OSSに初PR（追加演習）,要件定義 → 設計 → 実装 → プルリク体験 → 振り返り,Claude Pro: ClaudeでPR文作成支援,,https://opensource.guide/
+4,7,3,メンター経験開始（追加演習1）,社内外でメンタリング実践（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで教材作成,,https://leaddev.com/
+4,7,4,可観測性: OpenTelemetry（追加演習1）,トレーシング導入（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで導入手順生成,,https://opentelemetry.io/docs/
+4,8,1,運用設計: アラート設計（追加演習1）,SLO/SLI定義（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでドキュメント生成,,https://landing.google.com/sre/sre-book/chapters/service-level-objectives/
+4,8,2,マイクロサービス設計基礎（追加演習1）,サービス分割の演習（追加演習）,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計案比較,,https://microservices.io/
+4,8,3,契約テスト導入（追加演習1）,Provider/Consumerテスト（追加演習）,要件定義 → テストケース設計 → 実装 → 実行 → 振り返り,Claude Pro: Claudeでテストコード生成,,https://docs.pact.io/
+4,8,4,レガシーリファクタリング（追加演習1）,モジュール分割・疎結合化（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでリファクタ提案,,https://martinfowler.com/books/refactoring.html
+4,9,1,APIゲートウェイ導入（追加演習1）,API管理の実装（追加演習）,要件定義 → API設計 → 実装 → テスト → 振り返り,Claude Pro: Claudeでポリシー提案,,https://aws.amazon.com/api-gateway/
+4,9,2,セッション管理とスケーリング（追加演習1）,スケール時のセッション設計（追加演習）,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計案,,https://redis.io/
+4,9,3,認証高度化: SSO（追加演習1）,SAML/OIDCの理解と実装（追加演習）,要件定義 → 認証フロー設計 → 実装 → デバッグ → 振り返り,Claude Pro: Claudeでフロー整理,,https://openid.net/
+4,9,4,分散トランザクション入門（追加演習1）,補償トランザクション設計（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計補助,,https://microservices.io/patterns/data/transactional-outbox.html
+4,10,1,クラウド基礎: AWS/GCP（追加演習1）,クラウドアカウントセットアップ（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで比較解説,,https://aws.amazon.com/jp/getting-started/
+4,10,2,コンテナオーケストレーション: Kubernetes入門（追加演習1）,K8sでコンテナ運用（追加演習）,要件定義 → Docker化 → デプロイ設定 → デプロイ → 振り返り,Claude Pro: Claudeでマニフェスト生成,,https://kubernetes.io/
+4,10,3,サービスメッシュ基礎（追加演習1）,Istio/Linkerd導入演習（追加演習）,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで構成提案,,https://istio.io/
+4,10,4,スケーリングパターン（追加演習1）,水平スケール設計演習（追加演習）,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでトレードオフ分析,,https://12factor.net/
+4,11,1,データレイク/ETL基礎（追加演習1）,データパイプライン構築（追加演習）,要件定義 → DB設計 → CRUD実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計支援,,https://cloud.google.com/solutions/data-lake
+4,11,2,インフラコード: Terraform入門（追加演習1）,IaCでインフラ構築（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでテンプレ生成,,https://www.terraform.io/
+4,11,3,高可用性設計（追加演習1）,故障耐性の設計演習（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: ClaudeでHA設計チェック,,https://martinfowler.com/
+4,11,4,コスト最適化（追加演習1）,クラウドコスト試算と最適化（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでレポート作成,,https://aws.amazon.com/jp/pricing/
+4,12,1,運用自動化（追加演習1）,Runbook自動化スクリプト作成（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで自動化提案,,https://devops.com/
+4,12,2,コンプライアンス基礎（追加演習1）,セキュリティ・監査の前提（追加演習）,要件定義 → 脅威分析 → 実装 → セキュリティテスト → 振り返り,Claude Pro: Claudeでチェックリスト生成,,https://csrc.nist.gov/
+4,12,3,障害対応演習（ゲームデー）（追加演習1）,模擬障害の対応訓練（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで対応手順生成,,https://landing.google.com/sre/book.html
+4,12,4,データベーススケーリング（追加演習1）,リードレプリカ/シャーディング演習（追加演習）,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計案,,https://use-the-index-luke.com/
+5,1,1,イベント駆動アーキテクチャ（追加演習1）,Kafkaでイベント処理構築（追加演習）,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計指示,,https://kafka.apache.org/
+5,1,2,セキュリティ運用（追加演習1）,脆弱性対応ワークフロー構築（追加演習）,要件定義 → 脅威分析 → 実装 → セキュリティテスト → 振り返り,Claude Pro: Claudeで運用書作成,,https://owasp.org/
+5,1,3,監視とアラート実践（追加演習1）,Prometheus/Grafanaで監視（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでダッシュボード設計,,https://prometheus.io/
+5,1,4,マイクロフロントエンド（追加演習1）,複数チームのフロント統合（追加演習）,要件定義 → UI設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで分割戦略提案,,https://martinfowler.com/
+5,2,1,技術選定プロセス運用（追加演習1）,評価基準と比較表作成（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで比較表生成,,https://architecturenotes.co/
+5,2,2,チームリーダーシップ（追加演習1）,スクラム/アジャイル実践（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでミーティング議事録自動化,,https://www.scrum.org/
+5,2,3,採用と評価（追加演習1）,技術面接の作成と評価（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで面接問題生成,,https://hire.withgoogle.com/
+5,2,4,技術戦略立案（追加演習1）,3年〜5年の技術ロードマップ作成（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで戦略文書化支援,,https://leaddev.com/
+5,3,1,組織横断のアーキ設計（追加演習1）,複数プロダクトの統合設計（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでシステム図生成,,https://aws.amazon.com/architecture/
+5,3,2,大規模リファクタリング計画（追加演習1）,段階的リファクタ設計と実施（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでリファクタ案生成,,https://martinfowler.com/
+5,3,3,メンタリング体制構築（追加演習1）,メンター制度の設計と実行（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで教材作成,,https://leaddev.com/mentoring
+5,3,4,技術広報/講演（追加演習1）,カンファレンス向けスライド作成（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでスライド生成,,https://conf.dev/
+5,4,1,経営層への技術説明（追加演習1）,非技術者向け資料作成（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでプレゼン補助,,https://www.cio.com/
+5,4,2,プロダクトと技術の調整（追加演習1）,ビジネス要件を技術に落とす（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで要件整理,,https://martinfowler.com/
+5,4,3,5年の振り返りと今後の計画（追加演習1）,経験と成果の棚卸し（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでキャリアレビュー,,https://careerly.jp/
+5,4,4,TypeScript応用: ジェネリクス（追加演習2）,ライブラリの型定義（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで型設計補助,,https://www.typescriptlang.org/docs/
+5,5,1,型安全なAPIクライアント生成（追加演習2）,OpenAPIから型定義生成（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで自動化支援,,https://openapi-generator.tech/
+5,5,2,高度なReactパターン（追加演習2）,Compound Components導入（追加演習）,要件定義 → UI設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで改善案,,https://react.dev/learn
+5,5,3,クリーンアーキテクチャ基礎（追加演習2）,レイヤー分割設計（追加演習）,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでアーキ提案,,https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html
+5,5,4,テスト設計: TDD入門（追加演習2）,小さな機能をTDDで実装（追加演習）,要件定義 → テストケース設計 → 実装 → 実行 → 振り返り,Claude Pro: Claudeでテスト設計支援,,https://martinfowler.com/
+5,6,1,エンドツーエンド品質向上（追加演習2）,監視とテスト戦略立案（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで戦略作成,,https://testing.googleblog.com/
+5,6,2,CI/CD高度化（追加演習2）,ブルーグリーン/ローリングデプロイ導入（追加演習）,要件定義 → Docker化 → デプロイ設定 → デプロイ → 振り返り,Claude Pro: Claudeで手順生成,,https://martinfowler.com/bliki/BlueGreenDeployment.html
+5,6,3,セキュリティ実践: OWASP対応（追加演習2）,脆弱性診断と修正（追加演習）,要件定義 → 脅威分析 → 実装 → セキュリティテスト → 振り返り,Claude Pro: Claudeで脆弱性指摘,,https://owasp.org/www-project-top-ten/
+5,6,4,依存性管理とアップグレード戦略（追加演習2）,依存更新の自動化（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: ClaudeでPRテンプレ作成,,https://dependabot.com/
+5,7,1,パフォーマンスプロファイリング（追加演習2）,CPU/メモリ分析（追加演習）,要件定義 → パフォーマンス測定 → 改善実装 → 検証 → 振り返り,Claude Pro: Claudeでボトルネック特定支援,,https://developer.chrome.com/docs/performance/
+5,7,2,非同期設計: メッセージキュー（追加演習2）,RabbitMQ/Kafka導入演習（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計提案,,https://kafka.apache.org/
+5,7,3,データモデリング上級（追加演習2）,複雑クエリの最適化（追加演習）,要件定義 → DB設計 → CRUD実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計相談,,https://use-the-index-luke.com/
+5,7,4,アーキレビュー参加（追加演習2）,既存システムの改善提案（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでレビュー支援,,https://martinfowler.com/
+5,8,1,OSS貢献: 小さなPR作成（追加演習2）,OSSに初PR（追加演習）,要件定義 → 設計 → 実装 → プルリク体験 → 振り返り,Claude Pro: ClaudeでPR文作成支援,,https://opensource.guide/
+5,8,2,メンター経験開始（追加演習2）,社内外でメンタリング実践（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで教材作成,,https://leaddev.com/
+5,8,3,可観測性: OpenTelemetry（追加演習2）,トレーシング導入（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで導入手順生成,,https://opentelemetry.io/docs/
+5,8,4,運用設計: アラート設計（追加演習2）,SLO/SLI定義（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでドキュメント生成,,https://landing.google.com/sre/sre-book/chapters/service-level-objectives/
+5,9,1,マイクロサービス設計基礎（追加演習2）,サービス分割の演習（追加演習）,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計案比較,,https://microservices.io/
+5,9,2,契約テスト導入（追加演習2）,Provider/Consumerテスト（追加演習）,要件定義 → テストケース設計 → 実装 → 実行 → 振り返り,Claude Pro: Claudeでテストコード生成,,https://docs.pact.io/
+5,9,3,レガシーリファクタリング（追加演習2）,モジュール分割・疎結合化（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでリファクタ提案,,https://martinfowler.com/books/refactoring.html
+5,9,4,APIゲートウェイ導入（追加演習2）,API管理の実装（追加演習）,要件定義 → API設計 → 実装 → テスト → 振り返り,Claude Pro: Claudeでポリシー提案,,https://aws.amazon.com/api-gateway/
+5,10,1,セッション管理とスケーリング（追加演習2）,スケール時のセッション設計（追加演習）,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計案,,https://redis.io/
+5,10,2,認証高度化: SSO（追加演習2）,SAML/OIDCの理解と実装（追加演習）,要件定義 → 認証フロー設計 → 実装 → デバッグ → 振り返り,Claude Pro: Claudeでフロー整理,,https://openid.net/
+5,10,3,分散トランザクション入門（追加演習2）,補償トランザクション設計（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計補助,,https://microservices.io/patterns/data/transactional-outbox.html
+5,10,4,クラウド基礎: AWS/GCP（追加演習2）,クラウドアカウントセットアップ（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで比較解説,,https://aws.amazon.com/jp/getting-started/
+5,11,1,コンテナオーケストレーション: Kubernetes入門（追加演習2）,K8sでコンテナ運用（追加演習）,要件定義 → Docker化 → デプロイ設定 → デプロイ → 振り返り,Claude Pro: Claudeでマニフェスト生成,,https://kubernetes.io/
+5,11,2,サービスメッシュ基礎（追加演習2）,Istio/Linkerd導入演習（追加演習）,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで構成提案,,https://istio.io/
+5,11,3,スケーリングパターン（追加演習2）,水平スケール設計演習（追加演習）,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでトレードオフ分析,,https://12factor.net/
+5,11,4,データレイク/ETL基礎（追加演習2）,データパイプライン構築（追加演習）,要件定義 → DB設計 → CRUD実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計支援,,https://cloud.google.com/solutions/data-lake
+5,12,1,インフラコード: Terraform入門（追加演習2）,IaCでインフラ構築（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでテンプレ生成,,https://www.terraform.io/
+5,12,2,高可用性設計（追加演習2）,故障耐性の設計演習（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: ClaudeでHA設計チェック,,https://martinfowler.com/
+5,12,3,コスト最適化（追加演習2）,クラウドコスト試算と最適化（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでレポート作成,,https://aws.amazon.com/jp/pricing/
+5,12,4,運用自動化（追加演習2）,Runbook自動化スクリプト作成（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで自動化提案,,https://devops.com/
+6,1,1,コンプライアンス基礎（追加演習2）,セキュリティ・監査の前提（追加演習）,要件定義 → 脅威分析 → 実装 → セキュリティテスト → 振り返り,Claude Pro: Claudeでチェックリスト生成,,https://csrc.nist.gov/
+6,1,2,障害対応演習（ゲームデー）（追加演習2）,模擬障害の対応訓練（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで対応手順生成,,https://landing.google.com/sre/book.html
+6,1,3,データベーススケーリング（追加演習2）,リードレプリカ/シャーディング演習（追加演習）,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計案,,https://use-the-index-luke.com/
+6,1,4,イベント駆動アーキテクチャ（追加演習2）,Kafkaでイベント処理構築（追加演習）,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計指示,,https://kafka.apache.org/
+6,2,1,セキュリティ運用（追加演習2）,脆弱性対応ワークフロー構築（追加演習）,要件定義 → 脅威分析 → 実装 → セキュリティテスト → 振り返り,Claude Pro: Claudeで運用書作成,,https://owasp.org/
+6,2,2,監視とアラート実践（追加演習2）,Prometheus/Grafanaで監視（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでダッシュボード設計,,https://prometheus.io/
+6,2,3,マイクロフロントエンド（追加演習2）,複数チームのフロント統合（追加演習）,要件定義 → UI設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで分割戦略提案,,https://martinfowler.com/
+6,2,4,技術選定プロセス運用（追加演習2）,評価基準と比較表作成（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで比較表生成,,https://architecturenotes.co/
+6,3,1,チームリーダーシップ（追加演習2）,スクラム/アジャイル実践（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでミーティング議事録自動化,,https://www.scrum.org/
+6,3,2,採用と評価（追加演習2）,技術面接の作成と評価（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで面接問題生成,,https://hire.withgoogle.com/
+6,3,3,技術戦略立案（追加演習2）,3年〜5年の技術ロードマップ作成（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで戦略文書化支援,,https://leaddev.com/
+6,3,4,組織横断のアーキ設計（追加演習2）,複数プロダクトの統合設計（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでシステム図生成,,https://aws.amazon.com/architecture/
+6,4,1,大規模リファクタリング計画（追加演習2）,段階的リファクタ設計と実施（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでリファクタ案生成,,https://martinfowler.com/
+6,4,2,メンタリング体制構築（追加演習2）,メンター制度の設計と実行（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで教材作成,,https://leaddev.com/mentoring
+6,4,3,技術広報/講演（追加演習2）,カンファレンス向けスライド作成（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでスライド生成,,https://conf.dev/
+6,4,4,経営層への技術説明（追加演習2）,非技術者向け資料作成（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでプレゼン補助,,https://www.cio.com/
+6,5,1,プロダクトと技術の調整（追加演習2）,ビジネス要件を技術に落とす（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで要件整理,,https://martinfowler.com/
+6,5,2,5年の振り返りと今後の計画（追加演習2）,経験と成果の棚卸し（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでキャリアレビュー,,https://careerly.jp/
+6,5,3,TypeScript応用: ジェネリクス（追加演習3）,ライブラリの型定義（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで型設計補助,,https://www.typescriptlang.org/docs/
+6,5,4,型安全なAPIクライアント生成（追加演習3）,OpenAPIから型定義生成（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで自動化支援,,https://openapi-generator.tech/
+6,6,1,高度なReactパターン（追加演習3）,Compound Components導入（追加演習）,要件定義 → UI設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで改善案,,https://react.dev/learn
+6,6,2,クリーンアーキテクチャ基礎（追加演習3）,レイヤー分割設計（追加演習）,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでアーキ提案,,https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html
+6,6,3,テスト設計: TDD入門（追加演習3）,小さな機能をTDDで実装（追加演習）,要件定義 → テストケース設計 → 実装 → 実行 → 振り返り,Claude Pro: Claudeでテスト設計支援,,https://martinfowler.com/
+6,6,4,エンドツーエンド品質向上（追加演習3）,監視とテスト戦略立案（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで戦略作成,,https://testing.googleblog.com/
+6,7,1,CI/CD高度化（追加演習3）,ブルーグリーン/ローリングデプロイ導入（追加演習）,要件定義 → Docker化 → デプロイ設定 → デプロイ → 振り返り,Claude Pro: Claudeで手順生成,,https://martinfowler.com/bliki/BlueGreenDeployment.html
+6,7,2,セキュリティ実践: OWASP対応（追加演習3）,脆弱性診断と修正（追加演習）,要件定義 → 脅威分析 → 実装 → セキュリティテスト → 振り返り,Claude Pro: Claudeで脆弱性指摘,,https://owasp.org/www-project-top-ten/
+6,7,3,依存性管理とアップグレード戦略（追加演習3）,依存更新の自動化（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: ClaudeでPRテンプレ作成,,https://dependabot.com/
+6,7,4,パフォーマンスプロファイリング（追加演習3）,CPU/メモリ分析（追加演習）,要件定義 → パフォーマンス測定 → 改善実装 → 検証 → 振り返り,Claude Pro: Claudeでボトルネック特定支援,,https://developer.chrome.com/docs/performance/
+6,8,1,非同期設計: メッセージキュー（追加演習3）,RabbitMQ/Kafka導入演習（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計提案,,https://kafka.apache.org/
+6,8,2,データモデリング上級（追加演習3）,複雑クエリの最適化（追加演習）,要件定義 → DB設計 → CRUD実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計相談,,https://use-the-index-luke.com/
+6,8,3,アーキレビュー参加（追加演習3）,既存システムの改善提案（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでレビュー支援,,https://martinfowler.com/
+6,8,4,OSS貢献: 小さなPR作成（追加演習3）,OSSに初PR（追加演習）,要件定義 → 設計 → 実装 → プルリク体験 → 振り返り,Claude Pro: ClaudeでPR文作成支援,,https://opensource.guide/
+6,9,1,メンター経験開始（追加演習3）,社内外でメンタリング実践（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで教材作成,,https://leaddev.com/
+6,9,2,可観測性: OpenTelemetry（追加演習3）,トレーシング導入（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで導入手順生成,,https://opentelemetry.io/docs/
+6,9,3,運用設計: アラート設計（追加演習3）,SLO/SLI定義（追加演習）,要件定義 → 設計 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeでドキュメント生成,,https://landing.google.com/sre/sre-book/chapters/service-level-objectives/
+6,9,4,マイクロサービス設計基礎（追加演習3）,サービス分割の演習（追加演習）,要件定義 → アーキテクチャ選定 → 実装 → 動作確認 → 振り返り,Claude Pro: Claudeで設計案比較,,https://microservices.io/

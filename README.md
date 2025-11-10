@@ -10,25 +10,12 @@
 - 📝 **知識の記録**: 学習内容を体系的に記録・復習できる
 - 🤖 **Claudeサポート**: AIがステップバイステップでガイド
 
-## 完成プロジェクト例
-
-### Week 01: ToDoリストアプリ
-シンプルなWebアプリケーションの基礎を学習します。
-
-**学習内容**:
-- HTML/CSS/JavaScriptの基本
-- DOM操作とイベント処理
-- ローカルストレージを使ったデータ永続化
-
-**デモ**: `projects/week01-todo-app/` を開いて `index.html` をブラウザで開いてください
-
-[完成プロジェクトの詳細はこちら →](projects/week01-todo-app/README.md)
 
 ## ディレクトリ構成
 ```
 fullstack-learning/
 ├── settings/                # 学習プログラム管理用ファイル群
-│   ├── schedule.csv         # 全体の学習スケジュール（3年分）
+│   ├── dev-schedule.csv     # 全体の学習スケジュール（5年分）
 │   ├── learning.csv         # 現在の進捗管理ファイル
 │   ├── start-learning.sh    # 学習開始スクリプト
 │   ├── handle-selfcoding.sh # 自力コーディングプロジェクト処理
@@ -37,11 +24,11 @@ fullstack-learning/
 │   ├── add-knowledge.sh     # 体系的知識記録スクリプト
 │   └── add-topic.sh         # エラー・小知識記録スクリプト
 ├── projects/                # 週ごとのプロジェクトディレクトリ
-│   ├── week01-todo-app/
+│   ├── week01-portfolio/
 │   │   └── knowledge/       # 学習内容記録
 │   │       ├── *.md         # 体系的な知識
 │   │       └── error-topic/ # エラーや小さな知識
-│   ├── week02-auth-app/
+│   ├── week02-xxx/
 │   └── ...
 ├── projects-selfcoding/     # 自力コーディング用プロジェクト
 │   └── ...
@@ -68,7 +55,7 @@ fullstack-learning/
 2. Claudeに「次へ」と入力して次の工程に進む
 3. 開発工程ごとに段階的に学習を進めます
 4. 各工程が理解できたら「次へ」とリクエストしてください
-5. 完了した項目は`settings/schedule.csv`の「完了」列にチェックマークが追記されます
+5. 完了した項目は`settings/dev-schedule.csv`の「完了」列にチェックマークが追記されます
 
 ### 自力コーディングプロジェクトを作成する
 学習した内容を使って、自力でコーディングするための練習プロジェクトを作成できます。
