@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- 文字エンコーディング: UTF-8を指定（日本語対応） -->
+    <meta charset="UTF-8">
+
+    <!-- ビューポート設定: レスポンシブデザインの準備 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ページタイトル: ブラウザのタブに表示される -->
+    <title>あなたの名前 - ポートフォリオ</title>
+
+    <!-- 外部CSSファイルの読み込み -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===== ヘッダーセクション ===== -->
+    <!-- headerタグ: ページのヘッダー部分を表すセマンティックタグ -->
+    <header>
+        <!-- navタグ: ナビゲーションリンクをまとめるセマンティックタグ -->
+        <nav>
+            <!-- h1タグ: ページの最も重要な見出し（1ページに1つ） -->
+            <h1>Your Name</h1>
+
+            <!-- ulタグ: 順序なしリスト -->
+            <ul>
+                <!-- liタグ: リストの各項目 -->
+                <!-- aタグ: ハイパーリンク。href="#id"でページ内リンク -->
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== メインコンテンツ ===== -->
+    <!-- mainタグ: ページのメインコンテンツを表すセマンティックタグ -->
+    <main>
+
+        <!-- ===== ヒーローセクション ===== -->
+        <!-- sectionタグ: コンテンツのまとまりを表すセマンティックタグ -->
+        <!-- id属性: ページ内リンクのターゲットやCSSセレクタとして使用 -->
+        <section id="hero">
+            <!-- プロフィール画像の代替として絵文字を使用 -->
+            <div class="hero-image">👤</div>
+
+            <!-- h2タグ: セクションの見出し -->
+            <h2>あなたの名前</h2>
+
+            <!-- pタグ: 段落（パラグラフ） -->
+            <p class="hero-tagline">フルスタックエンジニアを目指して学習中</p>
+        </section>
+
+        <!-- ===== Aboutセクション ===== -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <!-- divタグ: コンテンツをグループ化する汎用コンテナ -->
+            <div class="about-content">
+                <p>
+                    こんにちは！私は現在、フルスタックエンジニアを目指して学習中です。
+                    HTML、CSS、JavaScriptなどのフロントエンド技術から、
+                    バックエンド、インフラまで幅広く学んでいます。
+                </p>
+                <p>
+                    このポートフォリオサイトは、学習の第1週目に作成したものです。
+                    今後も学習を続けながら、機能を追加していく予定です。
+                </p>
+            </div>
+        </section>
+
+        <!-- ===== Skillsセクション ===== -->
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <!-- スキルカードのコンテナ -->
+            <div class="skills-container">
+
+                <!-- 各スキルカード -->
+                <div class="skill-card">
+                    <!-- 絵文字をアイコンとして使用 -->
+                    <div class="skill-icon">🌐</div>
+
+                    <!-- h3タグ: サブセクションの見出し -->
+                    <h3>HTML/CSS</h3>
+                    <p>セマンティックHTML5とモダンCSSの基礎を学習中です。</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3>JavaScript</h3>
+                    <p>基本的な構文とDOM操作を学んでいます。</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🔧</div>
+                    <h3>Git/GitHub</h3>
+                    <p>バージョン管理システムの使い方を習得中です。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Projectsセクション ===== -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <!-- プロジェクトカードのコンテナ -->
+            <div class="projects-container">
+
+                <!-- プロジェクトカード1 -->
+                <div class="project-card">
+                    <!-- 画像の代替として絵文字を使用 -->
+                    <div class="project-image">📱</div>
+
+                    <h3>ポートフォリオサイト</h3>
+                    <p>HTML/CSSを使用した個人ポートフォリオサイトです。</p>
+
+                    <!-- 使用技術タグ -->
+                    <div class="project-tags">
+                        <!-- spanタグ: インライン要素のグループ化 -->
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </div>
+
+                <!-- プロジェクトカード2 -->
+                <div class="project-card">
+                    <div class="project-image">✅</div>
+                    <h3>TODOアプリ（今後作成予定）</h3>
+                    <p>JavaScriptを使ったタスク管理アプリを計画中です。</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">LocalStorage</span>
+                    </div>
+                </div>
+
+                <!-- プロジェクトカード3 -->
+                <div class="project-card">
+                    <div class="project-image">🌟</div>
+                    <h3>その他のプロジェクト</h3>
+                    <p>今後の学習で様々なプロジェクトを作成予定です。</p>
+                    <div class="project-tags">
+                        <span class="tag">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Contactセクション ===== -->
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <p>お気軽にご連絡ください</p>
+
+            <!-- SNSリンクのコンテナ -->
+            <div class="contact-links">
+                <!-- target="_blank": 新しいタブで開く -->
+                <!-- rel="noopener noreferrer": セキュリティ対策 -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <div class="contact-icon">💻</div>
+                    <span>GitHub</span>
+                </a>
+
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                    <div class="contact-icon">🐦</div>
+                    <span>Twitter</span>
+                </a>
+
+                <a href="mailto:your.email@example.com">
+                    <div class="contact-icon">📧</div>
+                    <span>Email</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== フッター ===== -->
+    <!-- footerタグ: ページのフッター部分を表すセマンティックタグ -->
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+
+        <!-- smallタグ: 小さいテキスト（著作権表記などに使用） -->
+        <small>Built with HTML & CSS</small>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,444 @@
+/* ===== CSS変数（カスタムプロパティ）の定義 ===== */
+/* :root疑似クラス: ドキュメント全体で使える変数を定義 */
+:root {
+    /* カラースキーム */
+    --primary-color: #2c3e50;      /* プライマリカラー（ダークブルー） */
+    --primary-light: #34495e;      /* ライトプライマリ */
+    --accent-color: #3498db;       /* アクセントカラー（ブルー） */
+    --accent-hover: #2980b9;       /* ホバー時のアクセントカラー */
+    --text-color: #333333;         /* メインテキスト */
+    --text-light: #7f8c8d;         /* サブテキスト */
+    --bg-color: #ffffff;           /* 背景白 */
+    --bg-light: #ecf0f1;           /* 背景グレー */
+    --border-color: #bdc3c7;       /* ボーダー色 */
+
+    /* スペーシング（余白）システム */
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 40px;
+    --spacing-xl: 60px;
+}
+
+/* ===== リセットCSS（ブラウザのデフォルトスタイルをリセット） ===== */
+* {
+    /* margin: 外側の余白 */
+    margin: 0;
+
+    /* padding: 内側の余白 */
+    padding: 0;
+
+    /* box-sizing: 要素の幅と高さの計算方法 */
+    /* border-box: パディングとボーダーを幅に含める */
+    box-sizing: border-box;
+}
+
+/* ===== 基本スタイル ===== */
+body {
+    /* font-family: フォントの種類 */
+    /* 左から順に優先して使用。なければ次のフォントを使う */
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+
+    /* line-height: 行間（読みやすさ重視） */
+    line-height: 1.6;
+
+    /* color: テキストの色 */
+    color: var(--text-color);
+
+    /* background-color: 背景色 */
+    background-color: var(--bg-color);
+}
+
+/* ===== スムーススクロール ===== */
+/* ページ内リンクをクリックしたとき、なめらかにスクロール */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== 見出しのスタイル ===== */
+h1 {
+    /* font-size: 文字サイズ（remは相対単位） */
+    font-size: 2.5rem;  /* 40px相当 */
+
+    /* font-weight: 文字の太さ */
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;    /* 32px相当 */
+    font-weight: bold;
+
+    /* margin-bottom: 下の余白 */
+    margin-bottom: var(--spacing-md);
+
+    /* text-align: テキストの配置 */
+    text-align: center;
+
+    color: var(--primary-color);
+}
+
+h3 {
+    font-size: 1.5rem;  /* 24px相当 */
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-color);
+}
+
+/* ===== リンクのスタイル ===== */
+a {
+    /* text-decoration: テキストの装飾（underline=下線） */
+    text-decoration: none;
+
+    color: var(--accent-color);
+
+    /* transition: プロパティの変化をアニメーション */
+    /* all: すべてのプロパティ */
+    /* 0.3s: 0.3秒かけて変化 */
+    /* ease: 変化のタイミング関数（開始と終了が緩やか） */
+    transition: all 0.3s ease;
+}
+
+/* リストのスタイルをリセット */
+ul {
+    /* list-style: リストマーカーのスタイル */
+    list-style: none;
+}
+
+/* ===== ヘッダー ===== */
+header {
+    background-color: var(--primary-color);
+
+    /* padding: 上下 左右 */
+    padding: var(--spacing-md) 0;
+
+    /* position: 要素の配置方法 */
+    /* sticky: スクロールしても画面に固定 */
+    position: sticky;
+
+    /* top: 固定する位置（上から0px） */
+    top: 0;
+
+    /* z-index: 重なり順（大きいほど前面） */
+    z-index: 1000;
+
+    /* box-shadow: 影の効果 */
+    /* 0 2px: 影の位置（横0px、下2px） */
+    /* 5px: ぼかしの大きさ */
+    /* rgba: 色（赤、緑、青、透明度） */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    /* max-width: 最大幅 */
+    max-width: 1200px;
+
+    /* margin: 0 auto で中央揃え */
+    margin: 0 auto;
+
+    padding: 0 var(--spacing-md);
+
+    /* ===== Flexbox: ナビゲーションの横並び配置 ===== */
+    /* display: flex でFlexboxを有効化 */
+    display: flex;
+
+    /* justify-content: 主軸（横方向）の配置 */
+    /* space-between: 両端に配置し、間を均等に空ける */
+    justify-content: space-between;
+
+    /* align-items: 交差軸（縦方向）の配置 */
+    /* center: 縦方向の中央に配置 */
+    align-items: center;
+}
+
+nav h1 {
+    color: white;
+    font-size: 1.8rem;
+}
+
+nav ul li {
+    /* display: 表示方法 */
+    /* inline-block: 横並びにできるブロック要素 */
+    display: inline-block;
+
+    /* margin-left: 左の余白 */
+    margin-left: var(--spacing-md);
+}
+
+nav a {
+    color: white;
+    font-weight: 500;
+
+    /* ===== ホバーエフェクトの準備 ===== */
+    /* padding-bottom: 下に余白を追加（下線用のスペース） */
+    padding-bottom: 4px;
+
+    /* border-bottom: 下線（最初は透明） */
+    border-bottom: 2px solid transparent;
+}
+
+/* :hover疑似クラス: マウスカーソルが乗った時のスタイル */
+nav a:hover {
+    /* 下線を表示 */
+    border-bottom: 2px solid white;
+}
+
+/* ===== セクションの共通スタイル ===== */
+section {
+    /* padding: 上下 左右 */
+    padding: var(--spacing-xl) var(--spacing-md);
+
+    /* max-width: コンテンツの最大幅を制限 */
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+/* 偶数番目のセクションに背景色を付ける */
+/* :nth-child(even): 偶数番目の要素 */
+section:nth-child(even) {
+    background-color: var(--bg-light);
+}
+
+/* ===== ヒーローセクション ===== */
+#hero {
+    text-align: center;
+
+    /* min-height: 最小の高さ */
+    /* vh: ビューポートの高さ（70%） */
+    min-height: 70vh;
+
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+
+    /* ===== Flexbox: 中央配置 ===== */
+    display: flex;
+
+    /* flex-direction: Flexアイテムの並び方向 */
+    /* column: 縦方向に配置 */
+    flex-direction: column;
+
+    /* justify-content: 主軸（縦方向）の配置 */
+    /* center: 中央に配置 */
+    justify-content: center;
+
+    /* align-items: 交差軸（横方向）の配置 */
+    /* center: 中央に配置 */
+    align-items: center;
+}
+
+.hero-image {
+    /* font-size: 絵文字のサイズ */
+    font-size: 8rem;
+
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-tagline {
+    font-size: 1.2rem;
+    margin-top: var(--spacing-sm);
+
+    /* opacity: 不透明度（0=透明、1=不透明） */
+    opacity: 0.9;
+}
+
+/* ===== Aboutセクション ===== */
+.about-content p {
+    margin-bottom: var(--spacing-md);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* ===== Skillsセクション ===== */
+.skills-container {
+    /* ===== Flexbox: スキルカードの横並び配置 ===== */
+    display: flex;
+
+    /* gap: Flexアイテム間の間隔 */
+    gap: var(--spacing-md);
+
+    /* flex-wrap: アイテムが入りきらない時の折り返し */
+    /* wrap: 折り返しを許可 */
+    flex-wrap: wrap;
+
+    /* justify-content: 主軸（横方向）の配置 */
+    /* center: 中央に配置 */
+    justify-content: center;
+}
+
+.skill-card {
+    /* border: ボーダーの太さ スタイル 色 */
+    border: 2px solid var(--border-color);
+
+    /* border-radius: 角の丸み */
+    border-radius: 8px;
+
+    padding: var(--spacing-lg);
+
+    text-align: center;
+
+    background-color: white;
+
+    /* ===== Flexアイテムの幅設定 ===== */
+    /* flex: フレックスアイテムの伸縮と基本サイズ */
+    /* 1 1 300px: 伸びる 縮む 基本サイズ300px */
+    flex: 1 1 300px;
+
+    /* max-width: 最大幅を制限 */
+    max-width: 350px;
+
+    /* ===== ホバーエフェクトの準備 ===== */
+    transition: all 0.3s ease;
+
+    /* cursor: マウスカーソルの形状 */
+    cursor: pointer;
+}
+
+/* スキルカードのホバーエフェクト */
+.skill-card:hover {
+    /* background-color: 背景色を変更 */
+    background-color: var(--bg-light);
+
+    /* transform: 要素の変形 */
+    /* scale: 拡大縮小（1.05 = 5%拡大） */
+    transform: scale(1.05);
+
+    /* box-shadow: 影を強調 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* ===== Projectsセクション ===== */
+.projects-container {
+    /* ===== Flexbox: プロジェクトカードの横並び配置 ===== */
+    display: flex;
+
+    gap: var(--spacing-lg);
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.project-card {
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: var(--spacing-md);
+    background-color: white;
+
+    /* box-shadow: 影の効果 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    /* ===== Flexアイテムの幅設定 ===== */
+    flex: 1 1 300px;
+    max-width: 350px;
+
+    /* ===== ホバーエフェクトの準備 ===== */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* プロジェクトカードのホバーエフェクト */
+.project-card:hover {
+    /* transform: translateY で上方向に移動 */
+    /* translateY(-10px): 10px上に移動（浮き上がる効果） */
+    transform: translateY(-10px);
+
+    /* box-shadow: より大きく濃い影 */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+    /* border-color: ボーダーの色を変更 */
+    border-color: var(--accent-color);
+}
+
+.project-image {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.project-tags {
+    margin-top: var(--spacing-sm);
+}
+
+.tag {
+    /* display: inline-block でタグを横並びに */
+    display: inline-block;
+
+    background-color: var(--accent-color);
+    color: white;
+
+    padding: 4px 12px;
+    border-radius: 20px;
+
+    /* font-size: 小さめのテキスト */
+    font-size: 0.85rem;
+
+    margin-right: var(--spacing-xs);
+    margin-top: var(--spacing-xs);
+}
+
+/* ===== Contactセクション ===== */
+#contact {
+    text-align: center;
+}
+
+.contact-links {
+    /* ===== Flexbox: コンタクトリンクの横並び配置 ===== */
+    display: flex;
+
+    gap: var(--spacing-lg);
+
+    justify-content: center;
+
+    /* flex-wrap: 折り返しを許可 */
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    display: inline-block;
+    text-align: center;
+
+    /* ===== ホバーエフェクトの準備 ===== */
+    transition: all 0.3s ease;
+}
+
+/* コンタクトリンクのホバーエフェクト */
+.contact-links a:hover {
+    /* transform: scale で拡大 */
+    transform: scale(1.1);
+
+    /* color: テキスト色を変更 */
+    color: var(--accent-hover);
+}
+
+.contact-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-xs);
+
+    /* ===== ホバーエフェクトの準備 ===== */
+    transition: all 0.3s ease;
+}
+
+/* コンタクトアイコンのホバーエフェクト */
+.contact-links a:hover .contact-icon {
+    /* transform: rotate で回転 */
+    /* rotate(10deg): 10度回転 */
+    transform: rotate(10deg);
+}
+
+/* ===== フッター ===== */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: var(--spacing-lg) var(--spacing-md);
+}
+
+footer small {
+    display: block;
+    margin-top: var(--spacing-sm);
+    opacity: 0.8;
+}
