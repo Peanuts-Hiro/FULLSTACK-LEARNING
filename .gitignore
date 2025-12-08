@@ -65,3 +65,19 @@ personal-notes/
 # Testing
 coverage/
 .nyc_output/
+
+# Python virtual environment
+venv/
+settings/calendar-sync/venv/
+
+# Google Calendar sync credentials
+settings/credentials/
+settings/credentials/credentials.json
+settings/credentials/token.json
+settings/credentials/*.pickle
+
+# Temporary files
+venv/tmp-error-source/
+
+# Temporary restructuring script
+settings/restructure.sh

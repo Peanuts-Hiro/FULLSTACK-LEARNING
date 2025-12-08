@@ -3,20 +3,20 @@
 # selfcodingコマンドを処理するスクリプト
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/../../.." && pwd)"
 cd "$ROOT_DIR"
 
 # learning.csvから現在の週番号を取得
-if [ ! -f "settings/learning.csv" ]; then
+if [ ! -f "settings/learning-program/data/learning.csv" ]; then
     echo "❌ learning.csvが見つかりません"
     exit 1
 fi
 
-CURRENT_LINE=$(sed -n '2p' settings/learning.csv)
+CURRENT_LINE=$(sed -n '2p' settings/learning-program/data/learning.csv)
 IFS=',' read -r YEAR MONTH WEEK CONTENT PHASE STATUS MEMO <<< "$CURRENT_LINE"
 
 # 提案を表示
-./settings/suggest-selfcoding.sh "$WEEK"
+"$SCRIPT_DIR/../../../lib/suggest-selfcoding.sh" "$WEEK"
 
 # ユーザーの確認を待つ
 echo ""
@@ -40,4 +40,4 @@ if [ -z "$PROJECT_NAME" ]; then
 fi
 
 # プロジェクトを作成
-./settings/create-selfcoding-project.sh "$WEEK" "$PROJECT_NUM" "$PROJECT_NAME"
+"$SCRIPT_DIR/../../../lib/create-selfcoding-project.sh" "$WEEK" "$PROJECT_NUM" "$PROJECT_NAME"

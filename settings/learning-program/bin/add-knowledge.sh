@@ -5,7 +5,7 @@
 
 # 現在のディレクトリを確認
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/../../.." && pwd)"
 cd "$ROOT_DIR"
 
 # 引数チェック
@@ -21,13 +21,13 @@ FILENAME="$1"
 TITLE="$2"
 
 # learning.csvから現在の週を取得
-if [ ! -f "settings/learning.csv" ]; then
+if [ ! -f "settings/learning-program/data/learning.csv" ]; then
     echo "⚠️  learning.csvが見つかりません"
     exit 1
 fi
 
 # CSVの2行目から週番号を取得
-WEEK=$(sed -n '2p' settings/learning.csv | cut -d',' -f3)
+WEEK=$(sed -n '2p' settings/learning-program/data/learning.csv | cut -d',' -f3)
 
 # プロジェクトディレクトリを特定
 PROJECT_DIR="projects/week$(printf "%02d" $WEEK)-*"

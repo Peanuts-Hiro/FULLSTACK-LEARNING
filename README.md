@@ -14,28 +14,36 @@
 ## ディレクトリ構成
 ```
 fullstack-learning/
-├── settings/                # 学習プログラム管理用ファイル群
-│   ├── dev-schedule.csv     # 全体の学習スケジュール（5年分）
-│   ├── learning.csv         # 現在の進捗管理ファイル
-│   ├── start-learning.sh    # 学習開始スクリプト
-│   ├── handle-selfcoding.sh # 自力コーディングプロジェクト処理
-│   ├── suggest-selfcoding.sh # プロジェクト提案スクリプト
-│   ├── create-selfcoding-project.sh # プロジェクト作成スクリプト
-│   ├── add-knowledge.sh     # 体系的知識記録スクリプト
-│   └── add-topic.sh         # エラー・小知識記録スクリプト
-├── projects/                # 週ごとのプロジェクトディレクトリ
+├── settings/
+│   ├── learning-program/          # 学習プログラム関連
+│   │   ├── bin/                   # 実行可能スクリプト
+│   │   │   ├── start-learning.sh  # 学習開始
+│   │   │   ├── handle-selfcoding.sh # 自力コーディング処理
+│   │   │   ├── add-knowledge.sh   # 知識記録
+│   │   │   └── add-topic.sh       # トピック記録
+│   │   ├── lib/                   # ライブラリ/ヘルパー
+│   │   │   ├── suggest-selfcoding.sh
+│   │   │   ├── create-selfcoding-project.sh
+│   │   │   └── selfcoding-tutorial.sh
+│   │   ├── data/                  # データファイル
+│   │   │   ├── dev-schedule.csv   # 5年間の学習スケジュール
+│   │   │   ├── learning.csv       # 現在の進捗
+│   │   │   └── selfcoding-progress.csv
+│   │   └── docs/                  # ドキュメント
+│   │       └── selfcoding-instructions.md
+│   ├── calendar-sync/             # Googleカレンダー同期
+│   │   ├── scripts/               # 同期スクリプト
+│   │   └── docs/                  # セットアップガイド
+│   └── credentials/               # 認証情報（.gitignore）
+├── projects/                      # 週ごとのプロジェクト
 │   ├── week01-portfolio/
-│   │   └── knowledge/       # 学習内容記録
-│   │       ├── *.md         # 体系的な知識
-│   │       └── error-topic/ # エラーや小さな知識
-│   ├── week02-xxx/
+│   │   └── knowledge/             # 学習内容記録
 │   └── ...
-├── projects-selfcoding/     # 自力コーディング用プロジェクト
-│   └── ...
-├── start                    # 学習開始ショートカット
-├── knowledge                # 体系的知識記録コマンド
-├── topic                    # エラー・小知識記録コマンド
-└── README.md                # このファイル
+├── projects-selfcoding/           # 自力コーディング用
+├── start                          # 学習開始ショートカット
+├── knowledge                      # 知識記録コマンド
+├── topic                          # トピック記録コマンド
+└── README.md
 ```
 
 ## 使い方
@@ -46,7 +54,7 @@ fullstack-learning/
 ```
 または
 ```bash
-./settings/start-learning.sh
+./settings/learning-program/bin/start-learning.sh
 ```
 このコマンドで現在の学習進捗と前回の学習内容まとめが表示されます。
 
@@ -55,7 +63,7 @@ fullstack-learning/
 2. Claudeに「次へ」と入力して次の工程に進む
 3. 開発工程ごとに段階的に学習を進めます
 4. 各工程が理解できたら「次へ」とリクエストしてください
-5. 完了した項目は`settings/dev-schedule.csv`の「完了」列にチェックマークが追記されます
+5. 完了した項目は`settings/learning-program/data/dev-schedule.csv`の「完了」列にチェックマークが追記されます
 
 ### 自力コーディングプロジェクトを作成する
 学習した内容を使って、自力でコーディングするための練習プロジェクトを作成できます。
@@ -69,7 +77,7 @@ fullstack-learning/
 
 または、直接スクリプトを実行することもできます:
 ```bash
-./settings/handle-selfcoding.sh
+./settings/learning-program/bin/handle-selfcoding.sh
 ```
 
 #### ステップ2: 要件定義と設計
@@ -87,7 +95,7 @@ Claudeに「〇〇プロジェクトの要件定義を手伝って」と依頼�
 実装開始方法:
 ```bash
 # コマンドで開始
-./settings/selfcoding-tutorial.sh projects-selfcoding/week01-01-プロジェクト名
+./settings/learning-program/lib/selfcoding-tutorial.sh projects-selfcoding/week01-01-プロジェクト名
 
 # またはClaudeに話しかける
 「projects-selfcoding/week01-01-プロジェクト名 の実装を始めたい」
@@ -114,7 +122,7 @@ DOM、イベント処理などの体系的な学習内容は `knowledge/` ディ
 
 または:
 ```bash
-./settings/add-knowledge.sh "ファイル名" "タイトル"
+./settings/learning-program/bin/add-knowledge.sh "ファイル名" "タイトル"
 ```
 
 **保存先**: `projects/week01-xxx/knowledge/ファイル名.md`
@@ -129,7 +137,7 @@ DOM、イベント処理などの体系的な学習内容は `knowledge/` ディ
 
 または:
 ```bash
-./settings/add-topic.sh "ファイル名" "タイトル"
+./settings/learning-program/bin/add-topic.sh "ファイル名" "タイトル"
 ```
 
 **保存先**: `projects/week01-xxx/knowledge/error-topic/ファイル名.md`
@@ -141,7 +149,30 @@ DOM、イベント処理などの体系的な学習内容は `knowledge/` ディ
 - 質問があればいつでもClaudeに聞いてください
 
 ## 現在の進捗
-`settings/learning.csv`で現在の学習状況を確認できます。
+`settings/learning-program/data/learning.csv`で現在の学習状況を確認できます。
+
+## Googleカレンダー連携
+
+学習スケジュールをGoogleカレンダーに同期できます。
+
+### セットアップ
+詳細は `settings/calendar-sync/docs/CALENDAR_SETUP.md` を参照してください。
+
+### 使い方
+```bash
+# カレンダーに同期
+./settings/calendar-sync/scripts/sync
+
+# リスケジュール（第5週以降を2週間後ろにずらす）
+python settings/calendar-sync/scripts/reschedule-learning.py --from-week 5 --shift-weeks 2 --sync
+```
+
+### 機能
+- ✅ 全学習スケジュールを自動でカレンダーに登録（週全体に終日イベントとして表示）
+- ✅ イベントの更新・削除に対応
+- ✅ リスケジュール機能（予定の一括変更）
+- ✅ リマインダー設定（1日前、1時間前）
+- ✅ 重複を防ぐ仕組み（extendedPropertiesで管理）
 
 ## セットアップ
 
@@ -156,10 +187,10 @@ git clone https://github.com/あなたのユーザー名/fullstack-learning.git
 cd fullstack-learning
 
 # 実行権限を付与
-chmod +x start
-chmod +x knowledge
-chmod +x topic
-chmod +x settings/*.sh
+chmod +x start knowledge topic
+chmod +x settings/learning-program/bin/*.sh
+chmod +x settings/learning-program/lib/*.sh
+chmod +x settings/calendar-sync/scripts/*
 
 # 学習を開始
 ./start

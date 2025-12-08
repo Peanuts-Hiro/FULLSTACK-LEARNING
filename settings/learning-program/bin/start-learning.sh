@@ -4,7 +4,7 @@
 
 # 現在のディレクトリを確認
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/../../.." && pwd)"
 cd "$ROOT_DIR"
 
 echo "========================================="
@@ -13,12 +13,12 @@ echo "========================================="
 echo ""
 
 # learning.csvから現在の進捗を読み込む
-if [ -f "settings/learning.csv" ]; then
+if [ -f "settings/learning-program/data/learning.csv" ]; then
     echo "📊 現在の学習進捗:"
     echo "-----------------------------------------"
 
     # CSVの2行目（データ行）を読み込む
-    CURRENT_LINE=$(sed -n '2p' settings/learning.csv)
+    CURRENT_LINE=$(sed -n '2p' settings/learning-program/data/learning.csv)
 
     # カンマで分割
     IFS=',' read -r YEAR MONTH WEEK CONTENT PHASE STATUS MEMO <<< "$CURRENT_LINE"

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# カレンダー同期のショートカットスクリプト
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/../../.." && pwd)"
+
+# 仮想環境のPythonを使用（存在する場合）
+if [ -f "$ROOT_DIR/venv/bin/python" ]; then
+    "$ROOT_DIR/venv/bin/python" "$SCRIPT_DIR/sync-to-calendar.py" "$@"
+else
+    python3 "$SCRIPT_DIR/sync-to-calendar.py" "$@"
+fi

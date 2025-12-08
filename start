@@ -2,4 +2,4 @@
 
 # startコマンドでstart-learning.shを実行するラッパースクリプト
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-"$SCRIPT_DIR/settings/start-learning.sh"
+"$SCRIPT_DIR/settings/learning-program/bin/start-learning.sh"
