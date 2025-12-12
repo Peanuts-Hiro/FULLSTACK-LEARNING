@@ -40,6 +40,12 @@ fullstack-learning/
 │   │   └── knowledge/             # 学習内容記録
 │   └── ...
 ├── projects-selfcoding/           # 自力コーディング用
+├── scripts/                       # 各種スクリプト
+│   └── notion/                    # Notion関連スクリプト
+│       └── upload-to-notion.js    # 学習内容をNotionにアップロード
+├── docs/                          # ドキュメント
+│   └── notion-setup/              # Notion連携セットアップ
+│       └── notion-upload-summary.md
 ├── start                          # 学習開始ショートカット
 ├── knowledge                      # 知識記録コマンド
 ├── topic                          # トピック記録コマンド
@@ -173,6 +179,53 @@ python settings/calendar-sync/scripts/reschedule-learning.py --from-week 5 --shi
 - ✅ リスケジュール機能（予定の一括変更）
 - ✅ リマインダー設定（1日前、1時間前）
 - ✅ 重複を防ぐ仕組み（extendedPropertiesで管理）
+
+## Notion連携
+
+週ごとの学習内容を詳細にNotionに記録できます。
+
+### 特徴
+- 📚 **体系的な学習記録**: 週ごとにページを分けて詳細に記録
+- 💡 **開発思考プロセス**: なぜそうするのか、どう考えるのかを含む
+- 🎯 **実践的なコード例**: 良い例・悪い例の比較付き
+- 📝 **階層構造**: トピックごとに子ページで整理
+
+### セットアップ
+詳細は `settings/docs/ENVIRONMENT_VARIABLES.md` の「Notion API」セクションを参照してください。
+
+必要な環境変数:
+```bash
+NOTION_API_KEY=your_api_key
+NOTION_ROADMAP_PAGE_ID=your_page_id
+```
+
+### 使い方
+
+#### 自動アップロード（推奨）
+`knowledge/` ディレクトリの内容を自動的にNotionにアップロード:
+```bash
+node scripts/notion/upload-to-notion.js
+```
+
+#### 手動でページ作成
+1. Notionでメインページ（ロードマップ）を作成
+2. 週ごとの子ページを作成（例: Week 01 - ポートフォリオサイト制作）
+3. 各トピックの子ページを作成（例: HTML構造とセマンティック）
+4. `knowledge/` 内のMarkdownファイルの内容をコピー
+
+### ページ構成例
+```
+📁 学習ロードマップ（メインページ）
+└── 📅 Week 01 - ポートフォリオサイト制作
+    ├── 📋 01. 要件定義と学習思考
+    ├── 🎨 02. 設計思考とデザインシステム
+    ├── 🏗️ 03. HTML構造とセマンティック
+    ├── 🎭 04. CSS基礎とスタイリング
+    ├── 📐 05. Flexboxレイアウト実践
+    └── ✨ 06. エフェクトとアニメーション
+```
+
+詳細は `docs/notion-setup/notion-upload-summary.md` を参照してください。
 
 ## セットアップ
 
